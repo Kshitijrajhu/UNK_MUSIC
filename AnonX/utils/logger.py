@@ -8,19 +8,19 @@ async def play_logs(message, streamtype):
         if message.chat.username:
             chatusername = f"@{message.chat.username}"
         else:
-            chatusername = "ᴩʀɪᴠᴀᴛᴇ ᴄʜᴀᴛ"
+            chatusername = "Pʀɪᴠᴀᴛᴇ Cʜᴀᴛ"
         logger_text = f"""
-**{MUSIC_BOT_NAME} ᴩʟᴀʏ ʟᴏɢɢᴇʀ**
+**「Uɴᴋ  𓆩✘𓆪 Mᴜsɪᴄ」 Pʟᴀʏ Lᴏɢɢᴇʀ**
 
-**ᴄʜᴀᴛ:** {message.chat.title} [`{message.chat.id}`]
-**ᴜsᴇʀ:** {message.from_user.mention}
-**ᴜsᴇʀɴᴀᴍᴇ:** @{message.from_user.username}
-**ɪᴅ:** `{message.from_user.id}`
-**ᴄʜᴀᴛ ʟɪɴᴋ:** {chatusername}
+**Cʜᴀᴛ:** {message.chat.title} [`{message.chat.id}`]
+**Usᴇʀ:** {message.from_user.mention}
+**Usᴇʀɴᴀᴍᴇ:** @{message.from_user.username}
+**Iᴅ:** `{message.from_user.id}`
+**Cʜᴀᴛ Lɪɴᴋ:** {chatusername}
 
-**sᴇᴀʀᴄʜᴇᴅ ғᴏʀ:** {message.text}
+**Sᴇᴀʀᴄʜᴇᴅ Fᴏʀ:** {message.text}
 
-**sᴛʀᴇᴀᴍ ᴛʏᴩᴇ:** {streamtype}"""
+**Sᴛʀᴇᴀᴍ Tʏᴩᴇ:** {streamtype}"""
         if message.chat.id != LOG_GROUP_ID:
             try:
                 await app.send_message(
